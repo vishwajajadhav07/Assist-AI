@@ -1,0 +1,17 @@
+{
+  "name": "assist-ai",
+  "version": "1.0.0",
+  "description": "Assist AI - ChatGPT-like AI chatbot powered by GitHub Models",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@azure-rest/ai-inference": "^1.0.0-beta.6",
+    "@azure/core-auth": "^1.11.0",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2"
+  }
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Assist AI</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- MAIN APP -->
+    <!-- ============================= -->
+
+    <div class="app-container">
+
+        <!-- ============================= -->
+        <!-- SIDEBAR -->
+        <!-- ============================= -->
+
+        <aside class="sidebar" id="sidebar">
+
+            <!-- Sidebar Header -->
+
+            <div class="sidebar-header">
+
+                <div class="brand">
+
+                    <div class="brand-icon">
+                        ✦
+                    </div>
+
+                    <div class="brand-text">
+                        <h2>Assist AI</h2>
+                        <span>AI Assistant</span>
+                    </div>
+
+                </div>
+
+                <!-- Close Sidebar Button -->
+
+                <button
+                    class="icon-button mobile-close"
+                    id="closeSidebarBtn"
+                    title="Close sidebar"
+                >
+                    ✕
+                </button>
+
+            </div>
+
+
+            <!-- ============================= -->
+            <!-- NEW CHAT BUTTON -->
+            <!-- ============================= -->
+
+            <button
+                class="new-chat-button"
+                id="newChatBtn"
+            >
+
+                <span class="new-chat-icon">
+                    +
+                </span>
+
+                <span>
+                    New Chat
+                </span>
+
+            </button>
+
+
+            <!-- ============================= -->
+            <!-- CHAT HISTORY -->
+            <!-- ============================= -->
+
+            <div class="history-section">
+
+                <div class="history-title">
+
+                    <span>
+                        Recent Chats
+                    </span>
+
+                    <button
+                        class="clear-history-btn"
+                        id="clearHistoryBtn"
+                        title="Clear chat history"
+                    >
+                        🗑
+                    </button>
+
+                </div>
+
+
+                <!-- Chat History Items -->
+
+                <div
+                    class="chat-history"
+                    id="chatHistory"
+                >
+
+                    <!-- JavaScript will add chats here -->
+
+                </div>
+
+            </div>
+
+
+            <!-- ============================= -->
+            <!-- SIDEBAR FOOTER -->
+            <!-- ============================= -->
+
+            <div class="sidebar-footer">
+
+                <div class="user-profile">
+
+                    <div class="user-avatar">
+                        V
+                    </div>
+
+                    <div class="user-info">
+
+                        <strong>
+                            Vishwaja
+                        </strong>
+
+                        <span>
+                            GitHub Models
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="settings-button"
+                        title="Settings"
+                    >
+                        ⚙
+                    </button>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ============================= -->
+        <!-- MAIN CHAT AREA -->
+        <!-- ============================= -->
+
+        <main class="main-content">
+
+
+            <!-- ============================= -->
+            <!-- TOP NAVBAR -->
+            <!-- ============================= -->
+
+            <header class="topbar">
+
+                <!-- Mobile Menu -->
+
+                <button
+                    class="icon-button menu-button"
+                    id="menuBtn"
+                    title="Open sidebar"
+                >
+                    ☰
+                </button>
+
+
+                <!-- Current Chat Title -->
+
+                <div class="chat-title">
+
+                    <div class="status-dot"></div>
+
+                    <span id="currentChatTitle">
+                        New Chat
+                    </span>
+
+                </div>
+
+
+                <!-- Topbar Actions -->
+
+                <div class="topbar-actions">
+
+                    <button
+                        class="icon-button"
+                        id="newChatTopBtn"
+                        title="New Chat"
+                    >
+                        ✨
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- ============================= -->
+            <!-- CHAT MESSAGES -->
+            <!-- ============================= -->
+
+            <section
+                class="chat-container"
+                id="chatContainer"
+            >
+
+                <!-- Welcome Screen -->
+
+                <div
+                    class="welcome-screen"
+                    id="welcomeScreen"
+                >
+
+                    <!-- AI Logo -->
+
+                    <div class="welcome-icon">
+
+                        <div class="welcome-icon-inner">
+                            ✦
+                        </div>
+
+                    </div>
+
+
+                    <!-- Welcome Text -->
+
+                    <h1>
+                        How can I help you today?
+                    </h1>
+
+                    <p>
+                        I'm Assist AI, your intelligent AI assistant.
+                        Ask me anything and let's get started.
+                    </p>
+
+
+                    <!-- Suggestion Cards -->
+
+                    <div class="suggestion-grid">
+
+                        <button
+                            class="suggestion-card"
+                            data-prompt="Explain artificial intelligence in simple words"
+                        >
+
+                            <span class="suggestion-icon">
+                                💡
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Explain something
+                                </strong>
+
+                                <small>
+                                    Learn a complex topic simply
+                                </small>
+
+                            </div>
+
+                        </button>
+
+
+                        <button
+                            class="suggestion-card"
+                            data-prompt="Write a Python program to calculate factorial"
+                        >
+
+                            <span class="suggestion-icon">
+                                💻
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Write some code
+                                </strong>
+
+                                <small>
+                                    Get help with programming
+                                </small>
+
+                            </div>
+
+                        </button>
+
+
+                        <button
+                            class="suggestion-card"
+                            data-prompt="Give me 5 creative project ideas for a computer science student"
+                        >
+
+                            <span class="suggestion-icon">
+                                🚀
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Get project ideas
+                                </strong>
+
+                                <small>
+                                    Find your next project
+                                </small>
+
+                            </div>
+
+                        </button>
+
+
+                        <button
+                            class="suggestion-card"
+                            data-prompt="Help me create a professional resume for a software engineering student"
+                        >
+
+                            <span class="suggestion-icon">
+                                📝
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Improve my resume
+                                </strong>
+
+                                <small>
+                                    Build your career profile
+                                </small>
+
+                            </div>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Messages will be inserted here -->
+
+                <div
+                    class="messages"
+                    id="messages"
+                >
+
+                </div>
+
+
+                <!-- AI Typing Indicator -->
+
+                <div
+                    class="typing-container hidden"
+                    id="typingIndicator"
+                >
+
+                    <div class="message-avatar ai-avatar">
+                        ✦
+                    </div>
+
+                    <div class="typing-bubble">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ============================= -->
+            <!-- INPUT AREA -->
+            <!-- ============================= -->
+
+            <footer class="input-area">
+
+                <div class="input-wrapper">
+
+
+                    <!-- Text Input -->
+
+                    <textarea
+                        id="prompt"
+                        class="prompt-input"
+                        placeholder="Message Assist AI..."
+                        rows="1"
+                    ></textarea>
+
+
+                    <!-- Input Actions -->
+
+                    <div class="input-actions">
+
+                        <div class="input-left-actions">
+
+                            <button
+                                class="input-icon-button"
+                                title="Attach file"
+                                id="attachBtn"
+                            >
+                                📎
+                            </button>
+
+                        </div>
+
+
+                        <!-- Send Button -->
+
+                        <button
+                            class="send-button"
+                            id="sendBtn"
+                            title="Send message"
+                        >
+
+                            <span id="sendIcon">
+                                ↑
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Disclaimer -->
+
+                <p class="input-disclaimer">
+                    Assist AI can make mistakes. Check important information.
+                </p>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

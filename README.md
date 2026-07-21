@@ -4,14 +4,14 @@
 
 ## ✨ Features
 
-- 💬 ChatGPT-inspired AI conversations
-- 🆕 New chat functionality
-- 🗂️ Chat history management
-- ✨ Smooth AI typing animation
-- 📋 Copy AI responses
-- 🗑️ Delete and clear conversations
-- 🎨 Modern, responsive UI
-- 🔐 Secure API token handling with environment variables
+-  ChatGPT-inspired AI conversations
+-  New chat functionality
+- Chat history management
+-  Smooth AI typing animation
+-  Copy AI responses
+-  Delete and clear conversations
+-  Modern, responsive UI
+-  Secure API token handling with environment variables
 
 ## 🛠️ Tech Stack
 

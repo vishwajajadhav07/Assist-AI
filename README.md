@@ -2,7 +2,7 @@
 
 > A modern AI-powered conversational assistant inspired by ChatGPT, built with a sleek and interactive user interface and powered by GitHub Models.
 
-## ✨ Features
+##  Features
 
 -  ChatGPT-inspired AI conversations
 -  New chat functionality
@@ -13,7 +13,7 @@
 -  Modern, responsive UI
 -  Secure API token handling with environment variables
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - HTML5
 - CSS3
@@ -22,7 +22,7 @@
 - Express.js
 - GitHub Models API
 
-## 🚀 Getting Started
+##  Getting Started
 
 ```bash
 git clone https://github.com/vishwajajadhav07/Assist-AI.git

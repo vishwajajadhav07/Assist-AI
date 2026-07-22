@@ -48,7 +48,7 @@ Open:
 http://localhost:3000
 ```
 
-## 🔮 Future Scope
+##  Future Scope
 
 - Real-time streaming responses
 - File and image support
